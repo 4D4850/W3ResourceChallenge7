@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Bank{
     private class Account{
         private int id;
@@ -9,7 +11,10 @@ public class Bank{
             accountBalance = f_accountBalance;
             name = f_name;
         }
-        
-        
+    }
+    ArrayList<Account> accountList = new ArrayList<Account>();
+    String bankName;
+    public Bank(String f_bankName){
+
     }
 }
