@@ -11,6 +11,13 @@ public class Bank{
             accountBalance = f_accountBalance;
             name = f_name;
         }
+        public int modifyBalance(double amount){ // Just put in a negative number to withdraw
+            if((accountBalance + amount) < 0){
+                return 1; //Insufficient funds
+            }
+            accountBalance += amount;
+            return 0; //Success
+        }
     }
     ArrayList<Account> accountList = new ArrayList<Account>();
     String bankName;
